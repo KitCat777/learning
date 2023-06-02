@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Загадки simple</title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script>
+			let count = 0;
+			let answer = "";
+			
+			answer = prompt ('Сто одежек и все без застежек')
+			if (answer == "капуста" || answer == "капустка" || answer == "капусточка") {
+				alert('Верно');
+				count++;
+			} else {
+				alert('Неверно');
+			}
+			answer = prompt ('Зимой и летом одним цветом')
+			if (answer == "ель" || answer == "елка" || answer == "елочка") {
+				alert('Верно');
+				count++;
+			} else {
+				alert('Неверно');
+			}
+			answer = prompt ('Летом серый, зимой белый')
+			if (answer == "заяц" || answer == "зайчик" || answer == "зайчонок") {
+				alert('Верно');
+				count++;
+			} else {
+				alert('Неверно');
+			}
+			alert('Количесвтво правильных ответов: '+ count);
+				
+		</script>
+	</head>
+	
+	<body>
+	</body>
+	</html>

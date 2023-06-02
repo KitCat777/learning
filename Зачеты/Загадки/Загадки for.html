@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Загадки for</title>
+		
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			button {
+				display: block;
+				margin: 100px auto;
+				width: 400px;
+				height: 250px;
+				font: bold 24px Arial;
+				color: green;
+				text-transform: uppercase;
+			}
+		</style>
+		
+		<script>
+			function playGame() {
+				let count = 0;
+				for (;;) {
+				let answer = prompt ('Сто одежек и все без застежек')
+					if (answer == "капуста" || answer == "капустка" || answer == "капусточка") {
+						alert('Верно');
+						count++;
+						break;
+					} else if (answer == "") {
+						alert('Вы не ввели ответ');
+						continue;
+					} else if (answer == null) {
+						if (window.confirm('Завершить игру?')) {
+						return;
+						}
+					} else {
+						alert('Неверно');
+						break;
+					}
+				}
+				for (;;) {
+				let answer = prompt ('Зимой и летом одним цветом')
+					if (answer == "ель" || answer == "елка" || answer == "елочка") {
+						alert('Верно');
+						count++;
+						break;
+					} else if (answer == "") {
+						alert('Вы не ввели ответ');
+						continue;
+					} else if (answer == null) {
+						if (window.confirm('Завершить игру?')) {
+						return;
+						}
+					} else {
+						alert('Неверно');
+						break;
+					}
+				}
+				for (;;) {
+				let answer = prompt ('Летом серый, зимой белый')
+					if (answer == "заяц" || answer == "зайчик" || answer == "зайчонок") {
+						alert('Верно');
+						count++;
+						break;
+					} else if (answer == "") {
+						alert('Вы не ввели ответ');
+						continue;
+					} else if (answer == null) {
+						if (window.confirm('Завершить игру?')) {
+						return;
+						}
+					} else {
+						alert('Неверно');
+						break;
+					}
+				}
+				alert('Количесвтво правильных ответов: ' + count);
+				}
+		</script>
+	</head>
+	
+	<body>
+		<button type="button" onclick="playGame();">начать игру</button>
+	</body>
+</html>ay
