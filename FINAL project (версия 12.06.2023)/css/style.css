@@ -1113,7 +1113,7 @@ label {
 
 /* adaptivity */
 
-/*@media screen and (max-width:1167px) {
+@media screen and (max-width:1167px) {
 	header .top {
 		width: 768px;
 	}
@@ -1194,4 +1194,5 @@ label {
 		height: 220px;
 		padding: 10px;
 		margin-bottom: 20px;
-	}*/
+	}
+}
